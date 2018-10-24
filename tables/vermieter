@@ -1,0 +1,14 @@
+drop table vermieter;
+CREATE TABLE vermieter ( 
+vorname_1 VARCHAR(30), 
+vorname_2 VARCHAR(30), 
+vorname_3 VARCHAR(30), 
+name_1 VARCHAR(30), 
+name_2 VARCHAR(30), 
+status CHAR(1), 
+address_id INT,
+Timestamp DATETIME DEFAULT CURRENT_TIMESTAMP not null,
+PRIMARY KEY (name_1, vorname_1) );
+insert into vermieter ( vorname_1, name_1, status)
+values ('Barbara', 'Deppert', 'L');
+
